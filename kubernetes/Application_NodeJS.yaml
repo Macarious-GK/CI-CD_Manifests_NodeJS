@@ -17,13 +17,13 @@ spec:
           image: macarious25siv/private-docker-repo:python-pod-name-app
           ports:
             - containerPort: 8080
-          # env:
-          #   - name: MONGODB_URI
-          #     value: "mongodb://mongodb-service.mac.svc.cluster.local:27017/test"
-          #   - name: MONGODB_USERNAME
-          #     value: "testuser"
-          #   - name: MONGODB_PASSWORD
-          #     value: "testpassword"
+          env:
+            - name: MONGODB_URI
+              value: "mongodb://db-service.default.svc.cluster.local:27017/test"
+            - name: MONGODB_USERNAME
+              value: "testuser"
+            - name: MONGODB_PASSWORD
+              value: "testpassword"
 
 
 ---
