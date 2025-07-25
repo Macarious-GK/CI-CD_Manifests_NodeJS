@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nodejs
-          image: macarious25siv/private-docker-repo:python-pod-name-app
+          image: macarious25siv/private-docker-repo:3900321a9cfe490cadfdad1d014db9ed74f47dd7
           ports:
             - containerPort: 8080
           env:
