@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
         - name: nodejs
-          image: macarious25siv/private-docker-repo:python-pod-name-app
+          image: macarious25siv/project:3e751b5d92536ccbd58e52bbaddd6976fbac70a6
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
           env:
             - name: MONGODB_URI
               value: "mongodb://db-service.default.svc.cluster.local:27017/test"
@@ -36,7 +36,7 @@ spec:
     tier: app
   type: NodePort
   ports:
-    - port: 8080
-      targetPort: 8080
+    - port: 3000
+      targetPort: 3000
       protocol: TCP
       nodePort: 30333
