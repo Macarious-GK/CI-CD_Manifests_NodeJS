@@ -15,7 +15,7 @@ spec:
       containers:
         - name: nodejs
 
-          image: macarious25siv/project:afecfdadf49385f7787ac5f6a5a589efc93c22b6
+          image: macarious25siv/project:0299267783f9c87e1de0d79523dcc9c57dbb89ad
           ports:
             - containerPort: 3000
           env:
